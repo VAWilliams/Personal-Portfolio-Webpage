@@ -1,0 +1,99 @@
+body,
+#navbar ul { 
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+}
+#navbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    text-align: right;
+    padding: 30px;
+    background-color: white;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.8);
+}
+#navbar ul li { display: inline-block; }
+a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: #495863;
+}
+
+
+#welcome-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../images/background/Landscape-Mountain.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-size: larger;
+    text-align: center;
+}
+#projects {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 5% 2%;
+}
+.project-tile {
+    width: 300px;
+    border: 1px #0000007a solid;
+    border-radius: 2px;
+    margin: 30px auto;
+    
+}
+.project-tile a {
+    /* display: flex; */
+    
+}
+.project-tile img {
+    width: 95%;
+    padding: 10px;
+}
+.project-tile div {
+    padding: 10px;
+    border-top: 1px #0000007a solid;
+    text-align: center;
+}
+#projects > div:last-child {
+    width: 100%;
+    display: flex;
+    margin: 50px auto;
+}
+button {
+    font-family: inherit !important;
+    border-color: #495863;
+    border-radius:  50px 50px 50px 0;
+    padding: 15px 20px;
+    background-image: url(../images/background/Landscape-Mountain.jpg);
+    background-size: 150px;
+    margin: auto;
+}
+button > a { color: white; }
+#contact {
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+}
+#link-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 300px;
+}
+
+footer { padding: 15px; }
+
+@media (min-width: 600px) {
+
+}
