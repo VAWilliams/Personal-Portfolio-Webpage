@@ -1,3 +1,11 @@
+:root {
+    --background-color: rgba(20, 23, 25, 0.98);
+    --color: rgb(20, 23, 25);
+    --link-color: white;
+    --shadow-color: white;
+    --second-background-color: white;
+}
+
 body,
 #navbar ul { 
     font-family: 'Roboto Mono', monospace;
@@ -9,14 +17,14 @@ body,
     left: 0;
     text-align: right;
     padding: 30px;
-    background-color: white;
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0.8);
+    background-color: var(--background-color, inherit);
+    box-shadow: 0 0 1px var(--shadow-color, inherit);
 }
 #navbar ul li { display: inline-block; }
 a {
     text-decoration: none;
     font-weight: bolder;
-    color: #495863;
+    color: var(--link-color, inherit);
 }
 
 
@@ -28,7 +36,7 @@ a {
     background-image: url(../images/background/Landscape-Mountain.jpg);
     background-size: cover;
     background-position: center;
-    color: white;
+    color: var(--color, inherit);
     font-size: larger;
     text-align: center;
 }
@@ -38,16 +46,13 @@ a {
     justify-content: space-evenly;
     flex-wrap: wrap;
     padding: 5% 2%;
+    background-color: var(--background-color, inherit);
 }
 .project-tile {
     width: 300px;
-    border: 1px #0000007a solid;
+    border: 1px var(--shadow-color, inherit) solid;
     border-radius: 2px;
     margin: 30px auto;
-    
-}
-.project-tile a {
-    /* display: flex; */
     
 }
 .project-tile img {
@@ -56,7 +61,7 @@ a {
 }
 .project-tile div {
     padding: 10px;
-    border-top: 1px #0000007a solid;
+    border-top: 1px var(--shadow-color, inherit) solid;
     text-align: center;
 }
 #projects > div:last-child {
@@ -66,14 +71,14 @@ a {
 }
 button {
     font-family: inherit !important;
-    border-color: #495863;
+    border-color: var(--link-color, inherit);
     border-radius:  50px 50px 50px 0;
     padding: 15px 20px;
     background-image: url(../images/background/Landscape-Mountain.jpg);
     background-size: 150px;
     margin: auto;
 }
-button > a { color: white; }
+button > a { color: var(--color, inherit); }
 #contact {
     height: 70vh;
     display: flex;
@@ -81,8 +86,8 @@ button > a { color: white; }
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
+    background-color: var(--second-background-color, inherit);
+    color: var(--color, inherit);
     text-align: center;
 }
 #link-container {
@@ -92,8 +97,18 @@ button > a { color: white; }
     width: 300px;
 }
 
-footer { padding: 15px; }
+footer {
+    padding: 15px;
+    background-color: var(--background-color, inherit);
+    color: var(--shadow-color, inherit);
+}
 
 @media (min-width: 600px) {
-
+    :root {
+        --background-color: white;
+        --color: white;
+        --link-color: #495863;
+        --shadow-color: #0000007a;
+        --second-background-color: rgba(0, 0, 0, 0.8);
+    }
 }
