@@ -64,11 +64,11 @@ a {
     border-top: 1px var(--shadow-color, inherit) solid;
     text-align: center;
 }
-#projects > div:last-child {
+/* #projects > div:last-child {
     width: 100%;
     display: flex;
     margin: 50px auto;
-}
+} */
 button {
     font-family: inherit !important;
     border-color: var(--link-color, inherit);
